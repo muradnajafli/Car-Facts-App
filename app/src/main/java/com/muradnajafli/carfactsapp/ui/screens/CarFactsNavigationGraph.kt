@@ -2,6 +2,7 @@ package com.muradnajafli.carfactsapp.ui.screens
 
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -11,7 +12,7 @@ import com.muradnajafli.carfactsapp.ui.UserInputViewModel
 
 @Composable
 fun CarFactsNavigationGraph(
-    userInputViewModelFactory: UserInputViewModel = hiltViewModel()
+    userInputViewModelFactory: UserInputViewModel = viewModel()
 ) {
     val navController = rememberNavController()
     NavHost(

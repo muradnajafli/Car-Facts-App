@@ -8,7 +8,6 @@ import com.muradnajafli.carfactsapp.data.UserDataUiEvents
 import com.muradnajafli.carfactsapp.data.UserInputScreenState
 
 
-
 class UserInputViewModel : ViewModel() {
 
     var uiState by mutableStateOf(UserInputScreenState())
